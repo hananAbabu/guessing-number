@@ -30,8 +30,8 @@
     <script>
         // Generate random number between 1 and 10
         const secretNumber = Math.floor(Math.random() * 10) + 1;
-        console.log("Secret number (for testing):", secretNumber);
 
+        
         function checkGuess() {
             const userGuess = parseInt(document.getElementById("guessInput").value);
             const result = document.getElementById("result");
@@ -42,7 +42,7 @@
             }
 
             if (userGuess === secretNumber) {
-                result.textContent = "🎉 Correct! You guessed the number!";
+                result.textContent = "Correct! You guessed the number!";
             } else if (userGuess < secretNumber) {
                 result.textContent = "Too low. Try again!";
             } else {
@@ -52,3 +52,4 @@
     </script>
 </body>
 </html>
+
